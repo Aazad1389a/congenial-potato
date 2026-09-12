@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعیت‌یابی با ipstack</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; background-color: #f4f4f9; text-align: center; padding: 50px; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; max-width: 400px; width: 100%; }
+        h1 { color: #333; }
+        p { color: #666; font-size: 18px; margin: 10px 0; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>اطلاعات موقعیت مکانی شما</h1>
+        <div id="loading">در حال دریافت اطلاعات...</div>
+        <div id="result" style="display: none;">
+            <p><strong>آی‌پـی:</strong> <span id="ip"></span></p>
+            <p><strong>کشـور:</strong> <span id="country"></span></p>
+            <p><strong>شـهر:</strong> <span id="city"></span></p>
+        </div>
+        <p id="error-msg" class="error" style="display: none;"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
