@@ -1,0 +1,6 @@
+# Ignore environment variables file containing sensitive API Keys
+.env
+
+# Python specific ignores
+__pycache__/
+*.pyc
